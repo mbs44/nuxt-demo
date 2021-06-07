@@ -14,7 +14,34 @@
             src="~assets/buefy.png"
             alt="Buefy"
             height="28"
-          >
+          />
+        </a>
+
+        <div class="navbar-burger">
+          <span />
+          <span />
+          <span />
+        </div>
+      </div>
+    </nav>
+
+
+    <nav
+      class="navbar header has-shadow"
+      role="navigation"
+      aria-label="main navigation"
+      style="background-color: green"
+    >
+      <div class="navbar-brand">
+        <a
+          class="navbar-item"
+          href="/"
+        >
+          <img
+            src="~assets/buefy.png"
+            alt="Buefy"
+            height="28"
+          />
         </a>
 
         <div class="navbar-burger">
@@ -31,10 +58,7 @@
           General
         </p>
         <ul class="menu-list">
-          <li
-            v-for="(item, key) of items"
-            :key="key"
-          >
+          <li v-for="(item, key) of items" :key="key">
             <nuxt-link
               :to="item.to"
               exact-active-class="is-active"
@@ -49,6 +73,16 @@
         <nuxt />
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+      </div>
+    </footer>
   </div>
 </template>
 
