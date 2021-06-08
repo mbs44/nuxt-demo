@@ -43,8 +43,13 @@
       <div class="content">
 
           <figure class="b-image-wrapper image">
-            <img src="~assets/writtenyumi.png" style="width:300px; height:300px">
+            <img src="~assets/writtenyumi.png" style="width:150px; height:150px">
           </figure>
+
+              <figure class="b-image-wrapper image">
+            <img src="~assets/writtenninka.png" style="width:150px; height:150px">
+          </figure>
+     
          <b-carousel>
             <b-carousel-item v-for="(advert, i) in adverts" :key="i">
                   <b-image class="image" :src="require(`~/assets/${advert.image}`)" loading="lazy"></b-image>

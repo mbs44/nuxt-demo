@@ -7,7 +7,7 @@
         <p class="title">You know who I'm</p>
         <p class="subtitle">Aligned with the right column</p>
         <div class="content">
-            <img src="~assets/jurh.png" class="">
+            <img src="~/assets/jurh.png" class="">
         </div>
       </article>
     </div>
@@ -18,34 +18,34 @@
         <p class="title">Top headlines</p>
         <div class="content">
             <div class="firsttext">
-                <a href="/food">
+                <NuxtLink to="/food">
                     <h4>THESE BAKED GOOD WILL MAKE YOUR GYNECOLOGIST'S MOUTH WATER!!! </h4>
-                </a>
+                  </NuxtLink>
             </div>
          <div class="firstpic">
                 <img src="~/assets/pic1.png" style="height: 200px; width: 500px;">
             </div>
 
             <div class="secondtext">
-                <a href="/fame">
+                 <NuxtLink to="/fame">
                     <h4>LOCAL MATHS TEACHER
                         OR SECRET SINGING
                          SENSATION?</h4>
-                </a>
+                 </NuxtLink>
             </div>
 
             <div class="secondpic">
-                <img src="~assets/pic2.png" style="height: 100px; width: 200px;">
+                <img src="~/assets/pic2.png" style="height: 100px; width: 200px;">
             </div>
 
             <div class="thirdtext">
-                <a href="/relationships">
+                <NuxtLink to="/relationships">
                     <h4> RELATIONSHIPS, FRIENDS AND FRENEMIES...</h4>
-                </a>
+                  </NuxtLink>
             </div>
 
             <div class="thirdpic">
-                <img src="~assets/frene.png" style="height: 100px; width: 200px;">
+                <img src="~/assets/frene.png" style="height: 100px; width: 200px;">
 
             </div>
         </div>

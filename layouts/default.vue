@@ -8,9 +8,7 @@
     >
       <div class="navbar-brand">
         <figure class="image is-128x128">
-          <a href="/">
-                <img src="~assets/gjh logo.png" alt="Gjh Logo" />
-          </a>
+             <NuxtLink to="/"><img src="~assets/gjh logo.png" alt="Gjh Logo" /></NuxtLink>
         </figure>
 
         <section class="hero is-success" style="background-color: green">
@@ -118,12 +116,12 @@ export default {
         },
         {
           title: 'Quizzes',
-          icon: 'lightbulb',
+          icon: 'check',
           to: { name: 'quizzes' }
         },
         {
           title: 'Surveys',
-          icon: 'check',
+          icon: 'lightbulb',
           to: { name: 'surveys' }
         }
       ]

@@ -7,14 +7,14 @@
             :size="size"
             vertical>
 
-            <b-step-item label="Get ready" icon="account-plus" >
+            <b-step-item label="Get ready" icon="play" >
                    <figure class="b-image-wrapper image">
                     <img src="~/assets/QuizTime.jpg" style="width:500px">
                   </figure>
   
             </b-step-item>
 
-            <b-step-item v-for="(question, i) in questions" :key="i" :label="`${question.label}`" icon="account-key">
+            <b-step-item v-for="(question, i) in questions" :key="i" :label="`${question.label}`" icon="check">
                  
                 <div class="box">
                   <b>{{question.text}}</b>
@@ -48,7 +48,7 @@
             </b-step-item>
 
 
-            <b-step-item label="Result" icon="account-plus" >
+            <b-step-item label="Result" icon="stop" >
                 
                    <figure class="b-image-wrapper image">
                     <img src="~/assets/QuizResult.png" style="width:500px">
@@ -157,7 +157,7 @@ s
                   },
                   {
                    value : 'c',
-                    text : "C: You’re always prepared, you are a part of the brainiacs,<br> your smarts get you great grades though your workload can get a bit tough sometimes."
+                    text : "C: You’re always prepared, you are a part of the brainiacs, your smarts get you great grades though your workload can get a bit tough sometimes."
                   },
                   {
                    value : 'd',
