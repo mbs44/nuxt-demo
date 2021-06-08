@@ -7,21 +7,17 @@
         </p>
       </header>
       <div class="card-content">
-        <div class="content has-text-centered">
-          <b-icon
-            :icon="icon"
-            size="is-large"
-            type="is-primary"
-          />
-        </div>
-      </div>
-      <footer class="card-footer">
         <div class="card-footer-item">
           <span>
             <slot />
           </span>
         </div>
-      </footer>
+        <div class="content has-text-centered">
+              <a :href="href">
+                    <img src="~assets/instagram 1.png" style="width:40px; height:40px;">
+              </a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -33,7 +29,7 @@ export default {
       type: String,
       required: true
     },
-    icon: {
+    href: {
       type: String,
       required: true
     }
