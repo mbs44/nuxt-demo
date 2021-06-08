@@ -52,20 +52,12 @@
           </figure>
   
     
-          <figure class="b-image-wrapper image">
-      <img src="~assets/boy .png" style="height: 518px; width: 290px;">
-    </figure>
-
-        <figure class="b-image-wrapper image">
-      <img src="~assets/44ad .png" style="Width:290px; height:290px;">
-    </figure>
-
-          <figure class="b-image-wrapper image">
-      <img src="~assets/gy ad .png" style="width:290px; height:290px;">
-    </figure>
-       <figure class="b-image-wrapper image">
-      <img src="~assets/ad 33.png" style="width:290px; height:290px;">
-    </figure>
+      <b-carousel>
+            <b-carousel-item v-for="(advert, i) in adverts" :key="i">
+                  <b-image class="image" :src="require(`~/assets/${advert.image}`)" loading="lazy"></b-image>
+                </b-carousel-item>
+          </b-carousel>
+          
       </div>
     </article>
   </div>
@@ -73,3 +65,20 @@
   </div>
   </section>
 </template>
+
+
+<script>
+export default {
+
+      data(){
+        return {
+            adverts: [
+                { image:'boy .png'},
+                { image:'44ad .png'},
+                { image:'gy ad .png'},
+                { image:'ad 33.png'}
+            ]
+        }
+    }
+}
+</script>

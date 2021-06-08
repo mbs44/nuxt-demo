@@ -23,7 +23,7 @@
                 </a>
             </div>
          <div class="firstpic">
-                <img src="~assets/pic1.png" style="height: 200px; width: 500px;">
+                <img src="~/assets/pic1.png" style="height: 200px; width: 500px;">
             </div>
 
             <div class="secondtext">
@@ -65,17 +65,12 @@
       <p class="subtitle">With some content</p>
       <div class="content">
         <b-carousel>
-              <b-carousel-item>
-                <figure class="b-image-wrapper image"><img src="~assets/gjh1.jpg" loading="lazy"></figure>
-              </b-carousel-item>
-              <b-carousel-item>
-                        <figure class="b-image-wrapper image"><img src="~assets/gjh2.png" loading="lazy"></figure>
-
-              </b-carousel-item>
-              <b-carousel-item>
-                          <figure class="b-image-wrapper image"><img src="~assets/gjh3.png" loading="lazy" ></figure>
-              </b-carousel-item>
+     
+         <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
+               <b-image class="image" :src="require(`~/assets/${carousel.image}`)" loading="lazy"> </b-image>
+            </b-carousel-item>
           </b-carousel>
+
       </div>
     </article>
   </div>
@@ -119,14 +114,12 @@ export default {
       data(){
         return {
             carousels: [
-                { image: 'gjh 1.jpg'},
-                { image: 'gjh 2.jpg'},
-                { image: 'gjh 4.jpg'}
+                { image: 'gjh1.jpg'},
+                { image: 'gjh2.png'},
+                { image: 'gjh3.png'}
             ]
         }
     }
 }
 </script>
 
-
-host:35093/nuxt-demo/_nuxt/assets/jurh.png

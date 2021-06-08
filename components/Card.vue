@@ -14,7 +14,7 @@
         </div>
         <div class="content has-text-centered">
               <a :href="href">
-                    <img src="~assets/instagram 1.png" style="width:40px; height:40px;">
+                    <img src="~/assets/instagram 1.png" style="width:40px; height:40px;">
               </a>
         </div>
       </div>
