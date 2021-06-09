@@ -56,7 +56,7 @@
     <footer class="footer">
 
   <section class="section">
-    <div class="columns is-mobile">
+    <div class="columns is-2">
       <card
         title="Nina Barabasova"
         href="https://www.instagram.com/nina_barabasova14/"
